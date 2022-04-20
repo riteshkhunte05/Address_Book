@@ -39,13 +39,12 @@ public class AdressBook {
 		System.out.print("\nEnter Zip  : ");
 		int zip = sc.nextInt();
 		contact.setZip(zip);
-		showContact(contact);
-		
+		displayContact(contact);
+		sc.close();
 
 	}
 
-	public void showContact(ContactInfo contact) {
-
+	public void displayContact(ContactInfo contact) {
 		System.out.print("\n-----------------");
 		System.out.print("\nFirst Name  : " + contact.getFirstName());
 		System.out.print("\nLast Name   : " + contact.getLastName());
@@ -55,12 +54,12 @@ public class AdressBook {
 		System.out.print("\nPhone Number : " + contact.getPhoneNo());
 		System.out.print("\nE-mail      : " + contact.getEmail());
 		System.out.print("\nZip         : " + contact.getZip());
-
+		
 	}
 
 	public static void main(String[] args) {
 
-		AdressBook book = new AdressBook ();
-		book.contact();
+		AdressBook ad = new AdressBook ();
+		ad.contact();
 	}
 }

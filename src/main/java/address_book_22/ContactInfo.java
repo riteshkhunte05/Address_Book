@@ -1,9 +1,9 @@
 package address_book_22;
 
 public class ContactInfo {
-	 String firstName, lastName, address, city, state, email;
-	    int zip;
-	    long phoneNo;
+	String firstName, lastName, address, city, state, email;
+	int zip;
+	long phoneNo;
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -68,5 +68,4 @@ public class ContactInfo {
 	public String getEmail() {
 		return email;
 	}
-
 }
